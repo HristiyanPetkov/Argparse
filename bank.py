@@ -207,7 +207,7 @@ if __name__ == '__main__':
         amount = int(input("How much do you wish to withdraw: "))
         client1.withdraw(amount, ID_ACCOUNT1)
     elif options.action_to_take == 'transfer':
-        ID2 = input("To/From which client do you wish to transfer money: ")
+        ID2 = input("To/From which client do you wish to transfer money(None for new client): ")
         if ID2 == "None":
             client2 = Client(FILE_PATH)
         else:
